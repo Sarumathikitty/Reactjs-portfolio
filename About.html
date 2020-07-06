@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+  </head>
+  <style>
+    #one
+    {
+      font-family: cursive;
+      color:white;
+      background-image:url("https://miro.medium.com/max/1400/1*JPoVGwBK_EC1aSxuXQtAQQ.jpeg");
+      background-size: 1345px 600px;
+      background-repeat: no-repeat;
+      height: 600px;
+      width:1345px; 
+      padding:20px;
+    }
+   h1{
+    color:grey;
+   }
+   h2{
+    color:white;
+   }
+   h3{
+    color:white;
+   }
+    
+  </style>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+      
+      const Element1=()=>
+      <div id="one"> 
+        <div id="two">
+       <h1>ABOUT ME</h1>
+       <h2>Name:Sarumathi R</h2>
+       <h2>DOB:sep,8 1998</h2>
+       <h2>Place:puducherry</h2>
+       <h2>Language Known:English,Telugu and Tamil </h2>
+       <h3>I utilize my potential to fulfill the organization’s goal<br/> while achieving my personal
+       goals.,</h3>
+       </div>
+       </div>;      
+     const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};
+      
+      ReactDOM.render(<Profile/>, rootElement);
+   
+    </script>
+  </body>
+</html>
