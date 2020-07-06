@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>profile</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+  </head>
+  <style>
+    #one
+    {
+      font-family: sans-serif;
+      color:black;
+      font-family: cursive;
+      background-image:url("https://previews.123rf.com/images/maglara/maglara1507/maglara150700050/43526464-back-to-school-concept-with-shopping-cart-books-and-graduation-hat.jpg");
+      background-size: 1345px 800px;
+      background-repeat: no-repeat;
+      height: 800px;
+      width:1345px; 
+      padding:40px;
+    }
+   h1{
+     color:black;
+     }
+    h2
+    {
+      color:grey;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");      
+      const Element1=()=>
+      <div id="one"> 
+       <h1>Education</h1>
+       <h2>B.Tech</h2>
+       <p> Completed b.tech in the stream of Electronics and Communication Engineering at<br/>
+      Sri Venkateshwara College of Engineering and Technology with<br/> 
+    aggregate of 80%.</p>       
+       <h2>Higher Secondary</h2>
+       <p>Govt.girls higher secondary school,puduchery</p>
+       <h2>SSLC</h2>
+       <p>Immaculate Heart of Mary's High School</p>       
+       </div>;
+      const Profile=()=>{return(
+     <div><Element1/>
+     </div>
+     );};      
+      ReactDOM.render(<Profile/>, rootElement);   
+    </script>
+  </body>
+</html>
