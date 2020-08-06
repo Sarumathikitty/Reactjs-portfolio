@@ -6,46 +6,125 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>   
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
   </head>
   <style>
-   #li1{
-     font-size:20px;
-     color:blue;
-   }  
-    </style>
+  ul#nobullets{
+     list-style-type: none;
+     }
+#intro{
+    padding: 4em 3em;
+        text-align: left;
+        justify-self: center;
+        text-align: center;
+    animation: loading 500ms ease-in-out;
+}
+#intro>h1>#hey {
+        font-weight: lighter;
+        font-size: 1em;
+    }
+    #intro>h1>#iam {
+        font-weight: bold;
+        font-size: 2em;
+    }
+ #intro>h3 {
+        text-align: center;
+    }
+#homebtn1 {
+    animation: loading-side-right 500ms ease-in-out 500ms;
+    animation-fill-mode: forwards;
+    transform: translateX(200%);
+}
+
+#homebtn2 {
+    animation: loading-left 500ms ease-in-out 500ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-200%);
+}
+ #homebtn1 {
+        animation: loading-side-right 500ms ease-in-out 500ms;
+        animation-fill-mode: forwards;
+        transform: translateX(200%);
+    }
+    #homebtn2 {
+        animation: loading-left 500ms ease-in-out 500ms;
+        animation-fill-mode: forwards;
+        transform: translateX(-200%);
+    }
+    #button {
+        padding: .8rem 2.2rem;
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        color: whitesmoke;
+        box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+        /* transition: background 1s ease; */
+        background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    }
+    #button:hover {
+        background: linear-gradient(90deg, #854fee 0%, #4458dc 100%);
+    }  
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a00fb+0,e600ff+100 */
+    background: #4a00fb;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  </style>
+
   <body>
     <div id="app"></div>
     <script type="text/babel">
       const rootElement = document.getElementById("app");     
        const Element1=()=>       
-       <div>
-        <img src="saru.jpg" style={{height:"550px",width:"400px",float:"left"}}/>
-      </div>
-      const Element2=()=>
-        <div id="one" style={{float:"right",backgroundColor:"#FFDEAD"}}>
-        <ul>          
-         <div style={{fontSize:"25px",backgroundColor:"#FFDEAD"}}>
-           <li style={{display:"inline",padding:"40px"}}><a href="About.html" style={{fontFamily:"cursive",color:"blue",textDecoration:"none"}}>About</a></li>
-          <li style={{display:"inline",padding:"40px"}}><a href="education.html" style={{fontFamily:"cursive",color:"blue",textDecoration:"none"}}>Education</a></li>
-          <li style={{display:"inline",padding:"40px"}}><a href="project.html" style={{fontFamily:"cursive",color:"blue",textDecoration:"none"}}>project</a></li>
-          <li style={{display:"inline",padding:"40px"}}><a href="Skills.html" style={{fontFamily:"cursive",color:"blue",textDecoration:"none"}}>Skills</a></li>
-          <li style={{display:"inline",padding:"40px"}}><a href="Contact.html" style={{fontFamily:"cursive",color:"blue",textDecoration:"none"}}>Contact</a></li></div>
+       <div id="leftside" style={{float:"left",backgroundColor:"lavender",width:"300px",marginLeft:"30px",marginTop:"20px"}}>
+       <div style={{paddingLeft:"40px",paddingTop:"20px"}}>
+       <img src="saru.jpg" style={{display:"inline",height:"160px",width:"200px",borderRadius:"50%"}}/>
+        </div>
+       <h2 style={{paddingLeft:"80px",color:"black"}}>Sarumathi</h2><br/>
+       <div style={{marginLeft:"80px"}}>
+        <span><a href="https://www.facebook.com/" style={{display:"inline",padding:"10px",color:"blue"}}><i className="fab fa-facebook-f"></i></a></span>
+        <span><a href="https://github.com/Sarumathikitty" style={{display:"inline",padding:"10px",color:"blue"}}><i class="fab fa-github"></i></a></span>
+         <span><a href="https://twitter.com/home" style={{display:"inline",padding:"10px",color:"blue"}}><i class="fab fa-twitter"></i></a></span>
+        </div>
+       <ul id="nobullets">          
+         <div style={{fontSize:"18px",color:"black",padding:"30px"}}>
+          <li> <a href="About.html" style={{color:"black",textDecoration:"none"}}>ABOUT</a></li><br/>          
+          <li><a href="education.html" style={{color:"black",textDecoration:"none"}}>EDUCATION</a></li>
+             <br/>
+          <li><a href="project.html" style={{color:"black",textDecoration:"none"}}>PROJECT</a></li><br/>
+          <li><a href="Skills.html" style={{color:"black",textDecoration:"none"}}>SKILLS</a></li><br/>
+          <li><a href="Contact.html" style={{color:"black",textDecoration:"none"}}>CONTACT</a></li>
+         </div>
         </ul>
-        <div style={{marginTop:"50px",marginLeft:"10px"}}><h2>Sarumathi</h2></div>
-        <div style={{color:"grey",marginLeft:"20px",fontStyle:"oblique"}}><h3>Hi,I am sarumathi I am a web developer,welcome to my portfolio.</h3></div>
-        <div style={{marginLeft:"10px",fontSize:"20px",fontStyle:"italic"}}> <p>My portfolio is a representation of all that I've learned and accomplished as a engineering student.<br/>
-         The writing samples in this portfolio show my critical thinking skills have evolved over the course of the program.</p></div>
-        <div style={{marginTop:"250px",marginLeft:"350px",fontSize:"30px",marginBottom:"20px"}}>
-        <span><a href="#" style={{display:"inline",padding:"10px",color:"blue"}}><i className="fab fa-facebook-f"></i></a></span>
-        <span><a href="#" style={{display:"inline",padding:"10px",color:"blue"}}><i class="fab fa-github"></i></a></span>
-         <span><a href="#" style={{display:"inline",padding:"10px",color:"blue"}}><i class="fab fa-twitter"></i></a></span></div>
-       </div> 
+      </div>
+
+      const Element2=()=>
+        <div style={{backgroundColor:"lavender",marginTop:"20px",marginRight:"69px",width:"70%",height:"560px",paddingTop:"10px",float:"right"}}>
+        <div id="intro">
+        <h1><span id="hey">Hey</span> <br/> <span id="iam"> I am <br/>Sarumathi</span></h1>
+                <h3>Full Stack Developer</h3>
+        <a href="mailto:sarurajasundaram@gmail.com"><button type="button" id="button primary-button homebtn1" ><i class="fa fa-envelope"></i>&nbsp;&nbsp;Mail me</button></a> &nbsp;
+        <a href="C:\Users\DELL\Desktop\saru resume.docx" download="saru-resume.docx"><button type="button" id="button secondary-button homebtn2"> Get Resume </button></a> 
+        </div>
+        </div>
             
      const Profile=()=>{return(
      <div><Element1/><Element2/>     
      </div>
-     );};     
+     );};
+     
       ReactDOM.render(<Profile/>, rootElement);
    
     </script>
