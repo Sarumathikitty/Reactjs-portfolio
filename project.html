@@ -8,13 +8,27 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
   </head>
   <style>
-    #img
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4a00fb+0,e600ff+100 */
+    background: #4a00fb;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    #one
     {
-      color:white;
-      background-image:url("http://www.nuno-icons.com/images/wall/blac2.png");
+      color:white;     
       background-size: 1345px 600px;
-      background-repeat: no-repeat;
-      
+      background-repeat: no-repeat;      
       height: 600px;
       width:1345px; 
       padding:40px;
@@ -26,7 +40,7 @@
     <script type="text/babel">
       const rootElement = document.getElementById("app");      
       const Element1=()=>
-      <div id="img"> 
+      <div id="one"> 
        <h1>PROJECT</h1>
        <h2>Title:A Frequency Reconfigurable Multiband Antenna for Wireless Services </h2>
        <h2>Description :To design, simulate, fabricate and measure a frequency reconfigurable antenna for multiband wireless services.</h2>
